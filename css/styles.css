@@ -10151,3 +10151,23 @@ section.resume-section .resume-section-content {
   -webkit-transform: translate(0);
           transform: translate(0);
 }
+
+.day{
+  color: #eeeeee;
+  font-size: 1.3em;
+}
+
+.afternoon{
+  color: #eeeeee;
+  font-size: 1.3em;
+}
+
+.night{
+  color: #eeeeee;
+  font-size: 1.3em;
+}
+
+.interest {
+  color: #eeeeee;
+  font-size: 1.3em;
+}

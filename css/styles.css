@@ -10167,7 +10167,18 @@ section.resume-section .resume-section-content {
   font-size: 1.3em;
 }
 
+.midnight{
+  color: #eeeeee;
+  font-size: 1.3em;
+}
+
 .interest {
   color: #eeeeee;
   font-size: 1.3em;
 }
+
+
+.head3{
+  font-size: 20px;
+}
+

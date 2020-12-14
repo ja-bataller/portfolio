@@ -11,12 +11,12 @@ if (new Date().getHours() >= 12 && new Date().getHours() < 18){
   console.log("afternoon")
 }
 
-if (new Date().getHours() >= 18 && new Date().getHours() < 24){
+if (new Date().getHours() >= 18 && new Date().getHours() < 00){
   daynight.classList.add('night')
   console.log("evening")
 }
 
-if (new Date().getHours() >= 24 && new Date().getHours() < 5){
+if (new Date().getHours() >= 00 && new Date().getHours() < 5){
   daynight.classList.add('midnight')
   console.log("midnight")
 }

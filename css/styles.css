@@ -10152,6 +10152,11 @@ section.resume-section .resume-section-content {
           transform: translate(0);
 }
 
+.greet{
+  color: #eeeeee;
+  font-size: 1.3em;
+}
+
 .day{
   color: #eeeeee;
   font-size: 1.3em;

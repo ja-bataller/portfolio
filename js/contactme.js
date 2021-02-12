@@ -16,36 +16,25 @@ if(contactUsForm){
       message: message
    };
 
+   const spinner = `<button class="btn btn-primary btn-sm" type="button" disabled>
+                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                        Sending...
+                     </button>`;
+
+   $('#sendEmailBtn').attr('disabled', 'disabled').html(spinner);
+
    emailjs.send('jdbt','Online_CV', templateParams)
       .then(function(response) {
-
-         iziToast.success({
-            title: 'Success',
-            position: "topRight",
-            message: 'Email successfully sent.',
-        });
-
-         $(".mail-btn").on("click touchstart", function () {
-            $(this).addClass("fly");
-            that = this;
-            setTimeout(function () {
-            $(that).removeClass("fly");
-            }, 5400);
-         });
-         
-
-         // Swal.fire(
-         //    'Good job!',
-         //    'You clicked the button!',
-         //    'success'
-         //  )
+         $('#sendEmailBtn').removeAttr('disabled').html('<i class="fas fa-paper-plane"></i> SEND');
+         $('#contactModal').modal('hide');
+         Swal.fire('Success', 'Your message has been sent successfully.', 'success')
 
          document.querySelector("#name").value = "";
          document.querySelector("#email").value = "";
          document.querySelector("#message").value = "";
-
       }, function(err) {
-         print("error")
+         $('#sendEmailBtn').removeAttr('disabled').html('<i class="fas fa-paper-plane"></i> SEND');
+         Swal.fire('Error', 'Server error.', 'error')
 
          document.querySelector("#name").value = "";
          document.querySelector("#email").value = "";

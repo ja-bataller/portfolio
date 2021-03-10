@@ -10201,3 +10201,11 @@ section.resume-section .resume-section-content {
 .appTitle {
   font-size: 1.3em;
 }
+
+.lightMode{
+  background-color: white;
+}
+
+.darkMode{
+  background-color: black;
+}

@@ -10209,3 +10209,7 @@ section.resume-section .resume-section-content {
 .darkMode{
   background-color: black;
 }
+
+.portfolioDivider{
+  border-top: 3px solid #bbb;
+}

@@ -10213,3 +10213,15 @@ section.resume-section .resume-section-content {
 .portfolioDivider{
   border-top: 3px solid #bbb;
 }
+
+.openFancyImage:hover{
+  color: #ffd369 ;
+}
+
+.fancybox__nav {
+  display: none;
+}
+
+.carousel__track {
+	display: none;
+}
